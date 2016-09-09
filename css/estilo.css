@@ -1,0 +1,167 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 20px;
+    color: #333;
+}
+.titulo-seccion {
+    padding: 30px 10px 2px 40px;
+    border-bottom: 1px solid #efefef;
+}
+.content{
+	margin-left: 20%;
+	margin-right: 20%;
+	-webkit-box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
+    -moz-box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
+    box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
+}
+.nombre {
+    font-size: 28px;
+    line-height: 25px;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+.profesion {
+    color: #777;
+    font-size: 22px;
+    font-weight: 300;
+    text-transform: uppercase;
+    line-height: 30px;
+    margin-top: 0px;
+}
+.sobre_mi,
+.estudios,
+.exp_laboral,
+.hobbie {
+    padding: 30px 40px;
+}
+.menu{
+    border-bottom: 1px solid #000;
+}
+
+.hiper_v:active  {
+    font-style: italic;
+}
+.alto-linea-p{
+    line-height: 25px;
+}
+
+.text-hiper{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    text-align: right;
+    text-transform: uppercase;
+    margin: 0;
+}
+.hiper_v:hover .text-hiper{
+    color:#00BFFF;
+}
+.hiper_v:hover{
+    border-bottom: 1px solid #00BFFF;
+}
+div.menu{
+	
+	 position: fixed;
+ 	-webkit-border-radius:5px;/*Para chrome y Safari*/
+    -moz-border-radius:5px;/*Para Firefox*/
+    -o-border-radius:5px;/*Para Opera*/
+    border-radius:5px;/*El estandar por defecto*/
+    background-color: #fff;
+    overflow:hidden;
+    width:60%;
+
+}
+.menu ul{
+	background-color: #000;
+    padding-left: 30%;
+}
+.menu li{
+	-webkit-border-radius:5px;/*Chrome y Safari*/
+    -moz-border-radius:5px;/*Firefox*/
+    -o-border-radius:5px;/*Opera*/
+    border-radius:5px;/*Estandar por defecto*/
+    float:left;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:14px;
+    font-weight:bold;
+    margin-right:5px;
+    text-align:center;
+    /*Sombras para texto, los mismos parametros que box-shadow*/
+    text-shadow: 0px 1px 0px #FFF;
+}
+.sobre_mi ul{
+    text-align: center;
+}
+ul{
+	list-style: none;
+    padding-left: 0px;
+}
+ul li.item a{
+	color:#999;
+    display:block;
+    padding:10px;
+    text-decoration:none;
+    /*Transiciones*/
+    -webkit-transition: 0.4s linear all;
+    -moz-transition: 0.4s linear all;
+    -o-transition: 0.4s linear all;
+    transition: 0.4s linear all;
+	
+}
+ul li a {
+	text-decoration: none;
+}
+
+.inf{
+    color: #333;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 900;
+}
+.valor {
+    color: #666;
+    font-size: 14px;
+    text-align: center;
+}
+.clearfix{
+	clear: both;
+}
+
+.imagenes{
+	width: 300px;
+	height: 150px;
+}
+.sobre{
+	padding-top:35px;
+    /*border-bottom: 1px solid #000;*/
+}
+.hobbie{
+	display: flex;
+	padding: 30px 10px;
+	margin: 20px 10px;
+}
+.letra{
+    font-weight:bold;
+}
+p,.letra{
+	font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+}
+p{
+	color: #777;
+    line-height: 22px;
+    font-weight: 300;
+    font-size: 14px;
+}
+h2{
+    margin: 10px 5px;
+}
+.descripcion{
+	padding-top:35px;
+}
