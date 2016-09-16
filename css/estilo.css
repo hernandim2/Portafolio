@@ -1,20 +1,37 @@
 *{
 	padding: 0;
 	margin: 0;
+     -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+html{
+    height: 100%;
 }
 body{
+    min-height: 100%;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     line-height: 20px;
     color: #333;
+    background-color: #efefef;
+}
+.c-derecha{
+    background-color: #FFF;
 }
 .titulo-seccion {
     padding: 30px 10px 2px 40px;
     border-bottom: 1px solid #efefef;
 }
 .content{
-	margin-left: 20%;
+	/*
+    margin-left: 20%;
 	margin-right: 20%;
+    margin-top: 40px;
+    */
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
 	-webkit-box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
     -moz-box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
     box-shadow: 10px 10px 14px 20px rgba(0,0,0,0.3);
@@ -65,7 +82,7 @@ body{
 .hiper_v:hover{
     border-bottom: 1px solid #00BFFF;
 }
-div.menu{
+.menu{
 	
 	 position: fixed;
  	-webkit-border-radius:5px;/*Para chrome y Safari*/
@@ -74,7 +91,7 @@ div.menu{
     border-radius:5px;/*El estandar por defecto*/
     background-color: #fff;
     overflow:hidden;
-    width:60%;
+    width:940px;
 
 }
 .menu ul{
@@ -116,6 +133,16 @@ ul li.item a{
 }
 ul li a {
 	text-decoration: none;
+}
+ul li div{
+    display: inline-block;
+    padding: 8px 0px;
+}
+ul li .inf{
+    width: 35%;
+}
+ul li .valor{
+    width: 63%;
 }
 
 .inf{
