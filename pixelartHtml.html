@@ -1,0 +1,74 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/pixelartCss.css">
+	<link rel="stylesheet" type="text/css" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+	<title>PixelArt</title>
+</head>
+<body>
+<div id="proyecto">
+     <div class="description">
+            <h1>Descripción del proyecto</h1>
+            <p>
+                Desarrollarás un juego en donde podrás realizar dibujos en Pixel Art. Podrás cambiar el color del pincel, borrar el dibujo, cambiar el tamaño de la grilla y luego, como una funcionalidad extra podrás guardar tus dibujos.
+            </p>
+
+            <h1>¿Por qué este proyecto?</h1>
+            <p>
+                En este proyecto aprenderás a guardar data capturada con un click, (...). Profundizaremos librerías aprendidas en los proyectos anteriores, como jQuery y javascript y aprenderemos a agregar recursos a nuestro proyecto como por ejemplo, iconos como tipografías.
+            </p>
+            <h1>¿Qué vas a aprender?</h1>
+            <p>
+                Aprenderás a diseñar un juego pensado para que otro pueda interactuar. Y por último aprenderemos a incluir los proyectos desarrollados en nuestro cv.
+            </p>
+            <h1>¿Cómo ayudará este proyecto a mi carrera?</h1>
+            <p>
+                Capturar eventos y hacer algo con ellos es una práctica muy común en todo front-end. Además este proyecto nos permitirá tener un cv completo con proyectos 100% propios para poder empezar a buscar trabajo.
+            </p>
+        </div>
+     <div id="game">
+          <div id="container">
+          </div>
+            <div id="actions">
+               <div id="color-pick">
+                         <div class="#16a085"></div>
+                         <div class="#1abc9c"></div>
+                         <div class="#2ecc71"></div>
+                         <div class="#27ae60"></div>
+                         <div class="#3498db"></div>
+                         <div class="#2980b9"></div>
+                         <div class="#9b59b6"></div>
+                         <div class="#8e44ad"></div>
+                         <div class="#34495e"></div>
+                         <div class="#2c3e50"></div>
+                         <div class="#f1c40f"></div>
+                         <div class="#f39c12"></div>
+                         <div class="#e67e22"></div>
+                         <div class="#d35400"></div>
+                         <div class="#e74c3c"></div>
+                         <div class="#c0392b"></div>
+                         <div class="#ecf0f1"></div>
+                         <div class="#bdc3c7"></div>
+                         <div class="#95a5a6"></div>
+                         <div class="#7f8c8d"></div>
+                         <div class="#000000"></div>
+                </div>
+               <div class="acciones_botones">
+                         <div class="grilla">
+                              <p>Tamaño</p>
+                              <input>
+                              <button id="sizeit" onclick="myPixelDraw.fns.reSize()"><span class="ion-android-arrow-forward"></span></button>
+                         </div>
+                         <button id="reset" class="btn_radius"><span class="ion-trash-a"></span></button>
+                         <button id="toggle-border" class="btn_radius"><span class="ion-ios-grid-view-outline"></span></button>
+                         <button id="ok"  class="btn_radius"><span class="ion-checkmark"></span></button>
+               </div>    
+          </div>
+     </div>
+</div>
+ 
+     <script src="js/jquery-3.1.1.min.js"></script>
+     <script src="js/pixelartJs.js"></script>
+     <script src="js/html2canvas.js"></script>
+</body>
+</html>

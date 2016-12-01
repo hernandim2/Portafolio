@@ -1,0 +1,20 @@
+.contenedor{
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 600px;
+	position: relative;
+	background-color: #fb1;
+}
+.pieza{
+	width: 200px;
+	height: 200px;
+	background-size: 100% 100%;
+  	outline: 1px #73afe4 solid;
+	position: absolute;
+}
+div#juego{
+	width: 600px;
+	height: 600px;
+	position: relative;
+}

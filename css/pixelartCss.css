@@ -1,0 +1,94 @@
+.tamanio{
+	width: 20px;
+	height: 20px;
+	background-color: #000;
+}
+#proyecto{
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+    padding: 20px;
+}
+.description{
+	margin-left: 10px;
+}
+#container{
+	width: 400px;
+	height: 400px;
+}
+#container div{
+	position: relative;
+	display: inline-block;
+}
+#actions{
+	width: 400px;
+	margin: 10px;
+
+}
+#color-pick{
+	width: 220px;
+	height: 50px;
+	float: left;
+}
+
+#color-pick div{
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin: 1px;
+	border: 1px solid #1abc9c;
+	border-radius: 25px;
+	cursor: pointer;
+}
+#color-pick > div.select{
+	 border: 1px solid #000;
+}
+.grilla{
+	margin-bottom: 10px;
+	padding: 0 10px;
+	border: 1px solid #1abc9c;
+	border-radius: 20px;
+}
+.grilla p{
+	font-size: 12px;
+	margin: 0px;
+	float: left;
+}
+.grilla input{
+	width: 70px;
+	height: 23px;
+	float: left;
+	margin-left: 5px;
+}
+.acciones_botones{
+	width: 180px;
+	float: left;
+}
+.acciones_botones .btn_radius{
+	font-size: 30px;
+	border-radius: 50px;
+	border: 1px solid #1abc9c;
+	background-color: #fff;
+	height: 48px;
+	margin: 0 4px;
+	width: 48px;
+	cursor: pointer;
+}
+#sizeit{
+	border: 0;
+    font-size: 24px;
+    float: right;
+    margin: 1px 5px 10px 10px;
+    background-color: #fff;
+    float: left;
+    cursor: pointer;
+}
+#container .cell{
+	background-color: #ecf0f1;
+	outline: 1px solid white;
+	cursor: pointer;
+}
+#container .cell.no-border{
+	outline: none;
+}
