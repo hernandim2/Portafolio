@@ -14,7 +14,6 @@ var myPixelDraw = {
 				cell=cantCell;
 				$("#container").empty();
 			}
-
 			var k=Math.pow(cell,2);
 			var contenido = null;
 			for (var i = 0; i < k; i++) {
@@ -41,19 +40,17 @@ var myPixelDraw = {
 			$("#color-pick > *").each(function(index, el) {
 				$(el).css("background-color",$(el).attr("class"));
 			});
-
-
 		},
 		pickColor:function() {
-
+				var selecionado = null;
 			 $("#color-pick > div").on('click',function() {
-				$(this).removeClass('select');
-				myPixelDraw.colorPicked = $(this).attr("class");
-				$(this).addClass("select");
+				 $(selecionado).removeClass('select');
+				 myPixelDraw.colorPicked = $(this).attr("class");
+				 $(this).addClass("select");
+				 selecionado = $(this);
 			});
 		},
 			colorIt:function() {
-				console.log("ASDASDS");
 			$(document).on('mousedown','#container .cell',function(event) {
 					event.preventDefault();
 					myPixelDraw.coloring = true;
@@ -62,7 +59,6 @@ var myPixelDraw = {
 					}else{
 						$(this).css("background-color",myPixelDraw.colorPicked);
 					}
-
 				});         
 			},
 		colorOnDrag:function() {
@@ -78,9 +74,6 @@ var myPixelDraw = {
 					}
 				}
 			});
-
-
-
 		},
 		reset:function() {
 			$('#reset').on('click',function() {
@@ -105,7 +98,6 @@ var myPixelDraw = {
 						document.body.appendChild(canvas);
 					}
 				});
-				console.log('hecho');
 			});
 		}
 	},
@@ -115,12 +107,10 @@ var myPixelDraw = {
 			Object.keys(self).forEach(function(key) {
 				self[key]();
 			});
-			 container.empty();
 		},
 };
 
 $(document).ready(
 	function() {
 	myPixelDraw.init($("#container"));
-	myPixelDraw.fns.calcSize();
 	});
